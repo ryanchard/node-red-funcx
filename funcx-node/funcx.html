@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('funcx',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            function: {value:"testfunction"},
+            endpoint: {value:"testendpoint"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"funcx";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="funcx">
+    <div class="form-row">
+        <label for="node-input-function"><i class="icon-tag"></i>Function ID</label>
+        <input type="text" id="node-input-function" placeholder="functionid">
+    </div>
+    <div class="form-row">
+        <label for="node-input-endpoint"><i class="icon-tag"></i>Endpoint ID</label>
+        <input type="text" id="node-input-endpoint" placeholder="endpointid">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="funcx">
+    <p>A node to invoke funcX functions</p>
+</script>

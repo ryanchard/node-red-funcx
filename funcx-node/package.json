@@ -1,0 +1,16 @@
+{
+  "name": "funcx-node",
+  "version": "1.0.0",
+  "description": "A funcx node red node",
+  "main": "funcx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "node-red" : {
+        "nodes": {
+            "funcx": "funcx.js"
+        }
+  }
+}

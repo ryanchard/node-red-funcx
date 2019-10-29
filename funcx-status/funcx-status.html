@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    RED.nodes.registerType('funcx-status',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"funcx status";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="funcx-status">
+
+</script>
+
+<script type="text/x-red" data-help-name="funcx-status">
+    <p>A node to get the status of a funcX function</p>
+</script>
